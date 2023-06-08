@@ -23,6 +23,12 @@ namespace Braboz.API.Controllers.Base
             return await ExecuteAsync<TRequest, TResult>(new TRequest());
         }
 
+        // COMMANDS
+        protected async Task<IActionResult> ExecuteCommandAsync<TRequest, TResult>(TRequest request) where TRequest : class, ICommand<TResult>
+        {
+            return await ExecuteAsync<TRequest, TResult>(request);
+        }
+
         private async Task<IActionResult> ExecuteAsync<TRequest, TResult>(TRequest request) where TRequest : class, IRequest<Result<TResult>>
         {
             IActionResult actionResult;
@@ -33,6 +39,7 @@ namespace Braboz.API.Controllers.Base
             {
                 actionResult = result.StatusCode switch
                 {
+                    HttpStatusCode.NoContent => NoContent(),
                     _ => Ok(result)
                 };
             }

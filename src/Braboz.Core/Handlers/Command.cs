@@ -5,7 +5,6 @@ namespace Braboz.Core.Handlers
 {
     public abstract class Command<TResult> : ICommand<TResult>
     {
-        [JsonIgnore]
         public Guid RequestId { get; set; }
     }
 }

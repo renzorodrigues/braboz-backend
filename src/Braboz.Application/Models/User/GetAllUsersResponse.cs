@@ -2,6 +2,7 @@
 {
     public class GetAllUsersResponse
     {
-        public string? Names { get; set; }
+        public int Id { get; set; }
+        public string? Name { get; set; }
     }
 }

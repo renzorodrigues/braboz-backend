@@ -15,8 +15,8 @@ namespace Braboz.Application.Products.Handlers.User
         public Task<Result<IEnumerable<GetAllUsersResponse>>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
         {
             var users = new List<GetAllUsersResponse>();
-            users.Add(new GetAllUsersResponse() { Names = "Renzo" });
-            users.Add(new GetAllUsersResponse() { Names = "Julianna" });
+            users.Add(new GetAllUsersResponse() { Id = 1, Name = "Renzo" });
+            users.Add(new GetAllUsersResponse() { Id = 2, Name = "Julianna" });
 
             var result = new Result<IEnumerable<GetAllUsersResponse>>(users);
 

@@ -1,6 +1,4 @@
-﻿using System.Net.NetworkInformation;
-using Braboz.Application.Products.CQS.Queries;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Braboz.Infra.CrossCutting.IoC;
 
 namespace Braboz.API
 {
@@ -14,12 +12,8 @@ namespace Braboz.API
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddControllers();
-            services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
-            // MEDIATOR
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllUsersQuery).Assembly));
+        {           
+            services.AddServicesExtensions(Configuration);
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)
