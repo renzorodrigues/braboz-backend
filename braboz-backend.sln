@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Braboz.API", "src\Braboz.API\Braboz.API.csproj", "{5FF837FF-222C-4515-8F37-E25D5019A915}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{66C1D7D5-A176-4CDF-A15C-2262348BE3F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{99AAFA77-7689-4EA5-85D8-0C1DA95DB38A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{F46A2C1C-96A4-4175-BBC5-94142B395EFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{32A7245F-2D02-42E7-A09E-816F699FC8AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{7BA8FEFC-5A7A-43C3-AE40-5A9F2F246DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Braboz.Application", "src\Braboz.Application\Braboz.Application.csproj", "{7FB075C7-756D-4CEB-A510-598D64523D6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FF837FF-222C-4515-8F37-E25D5019A915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF837FF-222C-4515-8F37-E25D5019A915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF837FF-222C-4515-8F37-E25D5019A915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF837FF-222C-4515-8F37-E25D5019A915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB075C7-756D-4CEB-A510-598D64523D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB075C7-756D-4CEB-A510-598D64523D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB075C7-756D-4CEB-A510-598D64523D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB075C7-756D-4CEB-A510-598D64523D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5FF837FF-222C-4515-8F37-E25D5019A915} = {99AAFA77-7689-4EA5-85D8-0C1DA95DB38A}
+		{99AAFA77-7689-4EA5-85D8-0C1DA95DB38A} = {66C1D7D5-A176-4CDF-A15C-2262348BE3F0}
+		{F46A2C1C-96A4-4175-BBC5-94142B395EFC} = {66C1D7D5-A176-4CDF-A15C-2262348BE3F0}
+		{7BA8FEFC-5A7A-43C3-AE40-5A9F2F246DDA} = {32A7245F-2D02-42E7-A09E-816F699FC8AD}
+		{7FB075C7-756D-4CEB-A510-598D64523D6E} = {F46A2C1C-96A4-4175-BBC5-94142B395EFC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D6B283C-E74D-435B-9D0C-CD54C503780B}
+	EndGlobalSection
+EndGlobal
