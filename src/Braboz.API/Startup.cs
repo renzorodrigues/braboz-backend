@@ -1,4 +1,8 @@
-﻿namespace Braboz.API
+﻿using System.Net.NetworkInformation;
+using Braboz.Application.Products.CQS.Queries;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Braboz.API
 {
     public class Startup : IStartup
     {
@@ -14,6 +18,8 @@
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            // MEDIATOR
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllUsersQuery).Assembly));
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment environment)

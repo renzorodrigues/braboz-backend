@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Products\CQS\Commands\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Braboz.Core\Braboz.Core.csproj" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
   </ItemGroup>
 
 </Project>
