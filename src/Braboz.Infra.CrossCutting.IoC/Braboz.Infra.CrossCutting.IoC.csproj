@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Braboz.Infra.Services\Braboz.Infra.Services.csproj" />
     <ProjectReference Include="..\Braboz.Application\Braboz.Application.csproj" />
+    <ProjectReference Include="..\Braboz.Infra.Services\Braboz.Infra.Services.csproj" />
   </ItemGroup>
 
 </Project>
