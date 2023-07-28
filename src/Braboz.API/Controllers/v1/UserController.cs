@@ -13,7 +13,7 @@ namespace Braboz.API.Controllers.v1
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() =>
+        public async Task<IActionResult> GetAllUsers() =>
             await ExecuteQueryAsync<GetAllUsersQuery, IEnumerable<GetAllUsersResponse>>();
     }
 }
