@@ -10,4 +10,9 @@
     <ProjectReference Include="..\Braboz.Core\Braboz.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Products\CQS\Commands\" />
+    <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+
 </Project>

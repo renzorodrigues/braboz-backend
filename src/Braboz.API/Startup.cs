@@ -1,4 +1,5 @@
-﻿using Braboz.Infra.CrossCutting.IoC;
+﻿using Braboz.Core.Middlewares;
+using Braboz.Infra.CrossCutting.IoC;
 
 namespace Braboz.API
 {
@@ -24,6 +25,7 @@ namespace Braboz.API
                 app.UseSwaggerUI();
             }
 
+            app.UseMiddleware<ValidationMiddleware>();
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();

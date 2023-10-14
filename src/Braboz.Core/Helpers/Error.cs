@@ -2,9 +2,9 @@
 {
     public class Error
     {
-        public string Message { get; }
+        public string? Message { get; }
 
-        public Error(string errorMessage)
+        public Error(string? errorMessage)
         {
             this.Message = errorMessage;
         }
